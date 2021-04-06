@@ -1,6 +1,9 @@
 + components 组件
 + networks 网络请求相关
 + pages 页面组件
+    - index 负责活动查看相关
+    - setting 用户信息相关
+    - home 负责发布活动和参与活动
 + resource
     - icons 存放图标
     - images 存放用图

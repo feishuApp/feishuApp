@@ -1,23 +1,41 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/page/home/home",
+    "pages/page/setting/setting"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Gadget",
+ 
     "navigationBarTextStyle":"black"
-  },
-  "tabBar":{
-    "color":"red",
-    "list":[
+  },"tabBar":{
+    "color": "#7A7E83",
+    "selectedColor": "#3370FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
       {
-        "text":"主页"
+        "pagePath": "pages/page/home/home",
+        "iconPath": "resource/icons/c2.png",
+        "selectedIconPath": "resource/icons/c1.png",
+        "text": "主页"
         
       },
       {
-        "text":"我的"
+        "pagePath": "pages/page/index/index",
+        "iconPath": "resource/icons/a2.png",
+        "selectedIconPath": "resource/icons/a1.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/page/setting/setting",
+        "iconPath": "resource/icons/b2.png",
+        "selectedIconPath": "resource/icons/b1.png",
+        "text": "我的"
       }
+     
+      
     ]
   }
+ 
 }
