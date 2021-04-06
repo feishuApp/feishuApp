@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Gadget",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"red",
+    "list":[
+      {
+        "text":"主页"
+        
+      },
+      {
+        "text":"我的"
+      }
+    ]
+  }
+}

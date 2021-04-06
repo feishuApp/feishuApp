@@ -1,0 +1,11 @@
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true
+    },
+    "appid":"cli_a0ed7c74ce78d00c",
+    "projectname": "Hello World"
+}
