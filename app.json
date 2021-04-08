@@ -1,26 +1,20 @@
 {
   "pages":[
-    "pages/page/home/home",
-    "pages/page/setting/setting"
+    "pages/page/more/more",
+    "pages/page/user/user",
+    "pages/page/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
- 
+    "navigationBarBackgroundColor": "#FFA500",
     "navigationBarTextStyle":"black"
-  },"tabBar":{
+  },
+    "tabBar":{
     "color": "#7A7E83",
-    "selectedColor": "#3370FF",
+    "selectedColor": "#FFA500",
     "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#FFF8DC",
     "list": [
-      {
-        "pagePath": "pages/page/home/home",
-        "iconPath": "resource/icons/c2.png",
-        "selectedIconPath": "resource/icons/c1.png",
-        "text": "主页"
-        
-      },
       {
         "pagePath": "pages/page/index/index",
         "iconPath": "resource/icons/a2.png",
@@ -28,13 +22,18 @@
         "text": "活动"
       },
       {
-        "pagePath": "pages/page/setting/setting",
+        "pagePath": "pages/page/more/more",
+        "iconPath": "resource/icons/c2.png",
+        "selectedIconPath": "resource/icons/c1.png",
+        "text": "热门"
+      },
+      {
+        "pagePath": "pages/page/user/user",
         "iconPath": "resource/icons/b2.png",
         "selectedIconPath": "resource/icons/b1.png",
         "text": "我的"
       }
      
-      
     ]
   }
  
