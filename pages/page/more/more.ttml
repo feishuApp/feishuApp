@@ -1,0 +1,7 @@
+<view class="container">
+
+    <form class="search">
+        <input type="text" placeholder="请输入活动关键字" bindfocus='focus' maxlength='20' name='s1'>
+        <button type="primary" formType='submit' name='s2'>搜索图标</button>
+    </form>
+</view>

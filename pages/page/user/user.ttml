@@ -1,0 +1,23 @@
+
+<view class='info'>
+<image src='../../../resource/img/2.jpeg' class='avatar'> </image>
+<view class="info-text">
+<view>name{{}}</view>
+<view class='small'>detail info/description{{}}</view>
+</view>
+
+</view>
+
+<view class='container'>
+<view class='line'></view>
+<view class='bar'><text class='iconfont icon-kaishi'></text>参与的活动<text class='iconfont icon-xiangyou'></text></view>
+<view class='bar'><text class='iconfont icon-huodong1'></text>发布的活动<text class='iconfont icon-xiangyou'></text></view>
+<view class='bar'><text class='iconfont icon-huodong2'></text>历史记录<text class='iconfont icon-xiangyou'></text></view>
+<view class='line'></view>
+<view class='bar'><text class='iconfont icon-yonghu'></text>信息<text class='iconfont icon-xiangyou'></text></view>
+<view class='bar'><text class='iconfont icon-xinxi-copy'></text>反馈<text class='iconfont icon-xiangyou'></text></view>
+<view class='line'></view>
+<view class='bar'><text class='iconfont icon-handoup'></text>捐赠开发者<text class='iconfont icon-xiangyou'></text></view>
+</view>
+
+

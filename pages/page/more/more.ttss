@@ -1,0 +1,9 @@
+.search{
+    border:red zolide 1px;
+}
+input:after{
+    border:red zolide 1px;
+}
+.mybt{
+    border: zolide 1px;
+}
