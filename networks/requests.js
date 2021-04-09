@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {boolean} showLoading 是否显示loading
+ * @param {string} method 请求方法
+ * @param {data} 请求数据
+ */
 const ttRequest = ({showLoading = true,url,method='GET',data})=>{
 
     const baseUrl = "https://www.liu12138.cn/";
@@ -37,5 +43,6 @@ const ttRequest = ({showLoading = true,url,method='GET',data})=>{
 
 
 }
+
 
 export default requests
