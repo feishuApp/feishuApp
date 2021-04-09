@@ -1,0 +1,7 @@
+<view class="wrapper">
+
+    <view class="container">
+    <button class="login_btn" bindtap="loginByFeishu">飞书登录</button>
+     <button class="login_btn">暂不登录</button>
+     </view>
+</view>

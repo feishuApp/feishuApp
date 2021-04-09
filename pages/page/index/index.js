@@ -1,8 +1,5 @@
 Page({
-  data: {
-
-  },
-  onLoad: function () {
-    
-  },
+  data:{
+      text:"A"
+  }
 })

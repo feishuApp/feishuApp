@@ -1,8 +1,9 @@
+<view>
 
 <view class='info'>
-<image src='../../../resource/img/2.jpeg' class='avatar'> </image>
+<image src='{{userinfo.avatarUrl}}' class='avatar'> </image>
 <view class="info-text">
-<view>name{{}}</view>
+<view>{{userinfo.nickName}}</view>
 <view class='small'>detail info/description{{}}</view>
 </view>
 
@@ -20,4 +21,5 @@
 <view class='bar'><text class='iconfont icon-handoup'></text>捐赠开发者<text class='iconfont icon-xiangyou'></text></view>
 </view>
 
+</view>
 
