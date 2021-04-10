@@ -17,7 +17,11 @@
 <view class='bar'><text class='iconfont icon-yonghu'></text>信息<text class='iconfont icon-xiangyou'></text></view>
 <view class='bar'><text class='iconfont icon-xinxi-copy'></text>反馈<text class='iconfont icon-xiangyou'></text></view>
 <view class='line'></view>
-<view class='bar'><text class='iconfont icon-handoup'></text>捐赠开发者<text class='iconfont icon-xiangyou'></text></view>
+<view class='bar'>
+<text class='iconfont icon-handoup'></text>捐赠开发者
+<image src='../../../resource/img/hh.jpg'></image>
+<text class='iconfont icon-up'></text>
+</view>
 </view>
 
 

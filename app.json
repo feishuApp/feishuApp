@@ -1,8 +1,9 @@
 {
   "pages":[
-    "pages/page/more/more",
-    "pages/page/user/user",
-    "pages/page/index/index"
+     "pages/page/index/index",
+     "pages/page/more/more",
+     "pages/page/user/user"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
