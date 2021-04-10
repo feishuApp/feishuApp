@@ -1,4 +1,109 @@
-.intro {
-  margin: 30px;
-  text-align: center;
+page{
+  background-color: #e2e2e2;
+}
+.container{
+margin:15px auto;
+height: 100%;
+width: 80%;
+font-size: 25px;
+position: relative;
+}
+image{
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.ora{
+  background-color: #FFA500;
+}
+.whi{
+  background-color: #fffae6;
+}
+.yel{
+  background-color: #eeead9;
+}
+.up,.down{
+align-items: center;
+box-shadow: 0 0 10px rgb(126, 124, 124);
+border-radius: 20px;
+width: 80%;
+margin:30px auto;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+}
+.up{
+  padding:30px 0;
+}
+.down{
+  padding:80px 0;
+}
+.up img{
+  height: 45px;
+}
+.create,.join{
+  width: 90%;
+  font-size: 15px;
+  padding:20px;
+  position: absolute;
+  margin:10px auto;
+  right: -15px;
+}
+.create{
+  height: 240px;
+  border:10px dotted #eeead9;
+  top:145px;
+}
+
+.join{
+  height: 100px;
+  border:10px dotted #FFA500;
+  top:-20px;
+}
+.create input{
+  border:2px solid #eeead9;
+  margin:5px;
+  border-radius: 10px;
+}
+.join input{
+  border:2px solid #FFA500;
+  margin:8px;
+  border-radius: 10px;
+}
+.inputa{
+  display: flex;
+}
+.xsmall{
+  width: 30%;
+}
+.small{
+  width: 70%;
+}
+button{
+  line-height: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: black;
+  margin:30px 0;
+}
+
+.remin{
+  display: flex;
+  margin-top: 50px;
+}
+.remin .txt{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #7c7979;
+  margin:5px;
+}
+.remin image{
+  width: 80px;
+  height: 80px;
+}
+.bigger{
+  font-size: 20px;
+  color: #474747;
 }

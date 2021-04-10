@@ -1,4 +1,34 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('data:font/truetype;charset=utf-8;base64,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') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.iconfont {
+    font-family: "iconfont" ;
+    font-size: 30px;
+    font-style: normal;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-sousuo:before {
+    content: "\e60d";
+  }
+  
+page{
+    background-color: #e2e2e2;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 90%;
+    margin:0 auto;
+    position: relative;
+}
 .search{
+<<<<<<< HEAD
     border:red solid 1px;
 }
 input:after{
@@ -7,3 +37,63 @@ input:after{
 .mybt{
     border: solid 1px;
 }
+=======
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding:20px;
+    border-bottom: 2px solid #777777;
+    z-index: 3;
+    background-color: #FFF8DC;
+}
+input{
+    border:5px solid #FFA500;
+    margin:5px 0;
+    border-radius: 10px;
+    width: 65%;
+  }
+button{
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    width: 20%;
+    background-color: #FFA500;
+    border:1px solid black;
+    line-height: 50px;
+}
+.empty{
+  height: 90px;
+}
+._container{
+  margin:20px auto;
+  width: 85%;
+  height: 200px;
+  border:3px double rgb(236, 157, 10);
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  box-shadow: 0 0 10px rgb(121, 121, 121);
+  background-color: #fffbe7;
+}
+._container text{
+font-size: 18px;
+width: 90%;
+
+}
+.big{
+font-size: 30px;
+font-weight: bold;
+}
+._container .line{
+  width: 90%;
+  height: 2px;
+  background-color: rgb(160, 149, 133);
+  margin:5px 0;
+}
+.more{
+  background-color: rgb(250, 235, 212);
+  border:2px solid rgb(236, 157, 10);
+  padding:10px;
+  text-align: center;
+}
+>>>>>>> dev2
