@@ -11,7 +11,9 @@
 
 <view class='container'>
 <view class='line'></view>
+<navigator url="/pages/page/partin/partin">
 <view class='bar'><text class='iconfont icon-kaishi'></text>参与的活动<text class='iconfont icon-xiangyou'></text></view>
+</navigator>
 <view class='bar'><text class='iconfont icon-huodong1'></text>发布的活动<text class='iconfont icon-xiangyou'></text></view>
 <view class='bar'><text class='iconfont icon-huodong2'></text>历史记录<text class='iconfont icon-xiangyou'></text></view>
 <view class='line'></view>
