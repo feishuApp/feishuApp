@@ -1,52 +1,27 @@
 <view  catchtap='cancel' class='null'></view>
 <view class='container'>
 
-<view class='up ora' catchtap='fun1'>
+<view class='up ora' catchtap='onSettingUp'>
 <image src='../../../resource/img/1.jpeg'  style='display:{{isshow1?"block":"none"}}'></image>
 <image src='../../../resource/img/11.jpeg'  style='display:{{isshow1?"none":"block"}}'></image> 
 <text>发布活动</text>
 </view>
 
-<view class='down yel' catchtap='fun2'>
+<view class='down yel' catchtap='onJoing'>
 <image src='../../../resource/img/3.jpeg'  style='display:{{isshow2?"block":"none"}}'></image>
 <image src='../../../resource/img/4.jpeg'  style='display:{{isshow2?"none":"block"}}'></image> 
 <text>参与活动</text>
 </view>
 
 <view class='create ora' style='display:{{create?"block":"none"}}'>
-<form catchsubmit='subOK'>
-<view class='inputa'>
-<input class='xsmall' name='activTag'  bindfocus='input' bindblur='uninput' data-id=0 style="border-color:{{color[0]}}" type='text' placeholder='活动标签' maxlength=2></input>
-<input class='small' name='activName'  bindfocus='input' bindblur='uninput' data-id=1 style="border-color:{{color[1]}}" type='text' placeholder='活动名字，最长15位'  maxlength=15></input>
-</view>
-<input name='activDescib' bindfocus='input' bindblur='uninput' data-id=2 style="border-color:{{color[2]}}" type='text' placeholder='请对活动进行描述'  maxlength=100></input>
-<view>活动开始时间：
-<picker-view>
-<picker-view-column>
-             <view tt:for="{{years}}" style="line-height: 60px; text-align: center;"></view>
-</picker-view-column>
-<picker-view-column style="text-align: center;">
-             <view tt:for="{{months}}" style="line-height: 60px; text-align: center;"></view>
-</picker-view-column>
-<picker-view-column style="text-align: center;">
-            <view tt:for="{{days}}" style="line-height: 60px; text-align: center;"></view>
-</picker-view-column>
-<picker-view-column style="text-align: center;">
-            <view tt:for="{{hours}}" style="line-height: 60px; text-align: center;"></view>
-</picker-view-column>
-</picker-view>
-<!-- 那种滑动选日期（初始值为当前时间），不知道为啥不显示 ，并且js的UTC得到的当前时间不对-->
-</view>
-<input name='activPlace' bindfocus='input' bindblur='uninput' data-id=3 style="border-color:{{color[3]}}"  type='text' placeholder='请填写活动地点' maxlength=50></input>
-<button formType='submit' class='yel'>提交</button>
 
-</form>
+<acti-setup-form/>
 </view>
 
 
 <view class='join yel' style='display:{{join?"block":"none"}}'>
 <form catchsubmit=''>
-<input name='activId' bindfocus='input' bindblur='uninput' data-id=4 style="border-color:{{color[4]}}"  type='number' placeholder='请输入活动ID，最长6位' maxlength=6></input>
+<input name='activId' bindfocus='input' bindblur='uninput' data-id=4 style="border-color:{{color[4]}}"  type='number' placeholder='请输入活动暗号' maxlength=6></input>
 <button formType='submit' class='ora'>提交</button>
 </form>
 </view>
@@ -59,7 +34,7 @@
 
 <view class='txt'>
 <text>1.再点击就取消</text>
-<text>1.怎么怎么的怎么的</text>
+<text>私密活动只有输入暗号才能搜索到哦</text>
 <text>1.怎么怎么的怎么的1.怎么怎么的怎么的</text>
 <text>1.怎么怎么的怎么的1.怎么怎么的怎么的</text>
 </view>

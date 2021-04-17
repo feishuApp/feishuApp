@@ -1,0 +1,10 @@
+<view class="_container">
+<text class='big'>【{{activTag}}】{{activName}}</text>
+<view class='line'></view>
+<text>发起人：{{activIni}}</text>
+<text>活动时间：{{activTime}}</text>
+<text>活动地点：{{activPlace}}</text>
+<view class='line'></view>
+<text>{{activDes}}
+</text>
+</view>

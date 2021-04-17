@@ -1,26 +1,24 @@
-<template name="list">
-<view class="_container">
-<text class='big'>【{{activTag}}】{{activName}}</text>
-<view class='line'></view>
-<text>发起人：{{activIni}}</text>
-<text>活动时间：{{activTime}}</text>
-<text>活动地点：{{activPlace}}</text>
-<view class='line'></view>
-<text>{{activDes}}
-</text>
-</view>
-</template>
+
 <form class="search">
-    <input class='xsmall' type="text" bindfocus='input' bindblur='uninput' style="border-color:{{color}}" placeholder='请输入关键字搜索' maxlength=15></input>
+    <input class='xsmall' type="text" bindfocus='_input' bindblur='_uninput' style="border-color:{{color}}" placeholder='请输入关键字搜索' maxlength=15></input>
     <button formType='submit'><text class='iconfont icon-sousuo'></text></button>
 </form>
 <view class="container">
 
 <view class='empty'></view>
 <view tt:for="{{listArry}}">
-<view data-index="{{index}}">
-<template is="list" data="{{...item}}" ></template>
+   
+<view data-index="{{index}}" key="{{item.activID}}" bindtap="navigatorToDetail" >
+<activity-list-item activName="{{item.acti1vName}}"  
+                    activIni="{{item.activIni}}"
+                    activTime="{{item.activTime}}" 
+                    activPlace="{{item.activPlace}}"
+                    activDes="{{item.activDes}}"
+                    activTag="{{item.activTag}}"
+                    data-activid="{{item.activID}}"
+                    />
 </view>
+
 </view>
-<view class="more">点击查看更多>>>></view>
+<view tt:if="{{reactBottomloading}}">loading...</view>
 </view>

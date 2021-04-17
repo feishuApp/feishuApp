@@ -1,4 +1,6 @@
 {
-    "usingComponents": {},
+    "usingComponents": {
+        "activity-list-item":"/components/activity-list-item/activity-list-item"
+    },
    "navigationBarTitleText": "热门活动"
   }

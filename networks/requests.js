@@ -4,19 +4,26 @@
  * @param {string} method 请求方法
  * @param {data} 请求数据
  */
-const ttRequest = ({showLoading = true,url,method='GET',data})=>{
+const ttRequest = ({showLoading = true,url,method='GET',data,timeout=5000})=>{
 
-    const baseUrl = "https://www.liu12138.cn";
+    const baseUrl = "http://localhost:3001";
     showLoading&&tt.showLoading({
       title: 'loading...', // 内容
         mask:true,
     });
-   
 
-  return new Promise((resolve,reject)=>{
+    //设置timeoutPromise,当时间超时，显示错误
+
+  const timerPromise = new Promise((resolve, reject) => {
+      setTimeout(function(){
+        reject("请求超时！")
+      },timeout)
+    })
+  const requestsPromise =  new Promise((resolve,reject)=>{
     tt.request({
         url:baseUrl+url, // 目标服务器url
         method,
+     
         success: (res) => {
             let resp = res
           tt.hideLoading({
@@ -42,7 +49,7 @@ const ttRequest = ({showLoading = true,url,method='GET',data})=>{
       });
   
   })
-
+  return Promise.race([requestsPromise,timerPromise])
 }
 
 

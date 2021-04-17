@@ -1,4 +1,14 @@
 .list-wrapper{
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
+    height: 45px;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0 0 5px rgb(121, 121, 121);
+}
+.list-left{
+    flex:1
+}
+.list-right{
+width: 70px;
 }

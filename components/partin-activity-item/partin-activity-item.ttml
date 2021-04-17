@@ -1,4 +1,4 @@
 <view class="list-wrapper">
-<view>{{activityName}}</view>
-<view>{{goingon?"正在进行":"已结束"}}</view>
+<view class="list-left">{{activityName}}</view>
+<view class="list-right">{{goingon?"正在进行":"已结束"}}</view>
 </view>

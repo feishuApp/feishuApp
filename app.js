@@ -4,8 +4,6 @@ App({
     globalSession:tt.getStorageSync('globalSession')
   },
   onLaunch: function () {
- 
-
-    
+       
   }
 })

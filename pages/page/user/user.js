@@ -6,7 +6,8 @@ Page({
      }
     },
 
-    onLoad: function(){
+    onShow: function(){
+      console.log("show")
         let thats = this
     
           tt.getStorage({

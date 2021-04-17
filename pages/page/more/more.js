@@ -1,25 +1,52 @@
-let datas=require('./data.js');
+import { getActivityData,} from '../../../networks/index';
+const blurColor = "#6495ED"
+const unBlurColor ="#FFA500"
 Page({
     data: {
-<<<<<<< HEAD
-      
-    },
-    onLoad: function () {
-     
-=======
       listArry:[],
-      color: ''
+      color: '',
+      reactBottomloading:false
     },
     onLoad: function () {
-      this.setData({
-        listArry:datas.list_data
+      const that = this
+      //请求主页数据
+      getActivityData()
+      .then(res=>{
+        console.log(res)
+        that.setData({
+          listArry:res,
+        })
       })
->>>>>>> dev2
+      .catch((err)=>{
+        console.log("err")
+        tt.showToast({
+          title: err,
+          duration: 1000,
+          icon:"none",
+      });
+      })
     },
-    input:function(){
-    this.setData({color:'#6495ED'})
+    // 跳转到detail页
+    navigatorToDetail:function(e){
+        console.log(e.target)
+      tt.navigateTo({
+        url: `/pages/page/detail/detail?activid=${e.target.dataset.activid}` // 指定页面的url;
+      });
     },
-    uninput:function(){
-    this.setData({color:'#FFA500'})
-    }
+    _input:function(){
+    this.setData({color:blurColor})
+    },
+    _uninput:function(){
+    this.setData({color:unBlurColor})
+    },
+    onReachBottom: function() {
+      // 页面触底时执行
+      console.log("reach bottom")
+      this.setData({
+        
+      })
+      this.setData({
+        listArry:[...this.data.listArry,...this.data.listArry]
+      })
+    },
 })

@@ -42,10 +42,6 @@ input{
     border-radius: 10px;
     width: 65%;
   }
-input:focus{
-  border-color: red;
-  color: red;
-}
 button{
     border-radius: 30px;
     width: 100%;

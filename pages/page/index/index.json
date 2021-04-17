@@ -1,5 +1,7 @@
 {
-   "usingComponents": {},
+   "usingComponents": {
+      "acti-setup-form":"/components/acti-setup-form/acti-setup-form"
+  },
    "navigationBarTitleText": "活动",
    "backgroundColor": "#aaa",
    "backgroundTextStyle": "light"
