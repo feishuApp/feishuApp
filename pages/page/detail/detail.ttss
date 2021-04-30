@@ -1,0 +1,74 @@
+.container{
+    padding: 12px;
+    height: 100vh;
+    position: relative;
+}
+.header-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 4px;
+}
+.nickname{
+    margin-left: 8px;
+    color: #3498db;
+}
+.avatar{
+    width: 38px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ctn-main{
+    
+}
+.img-cover{
+    margin-bottom: 16px;    
+    width: 30%;
+    margin: 4px;
+}
+.tag-ctn{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    }
+.tag{
+      font-size: 12px;
+      width: fit-content;
+      height: fit-content;
+      padding: 4px;
+      border: 1px solid rgb(236, 157, 10);
+      color: rgb(236, 157, 10);
+      border-radius: 5px;
+      box-sizing: content-box;
+      overflow: hidden;
+      margin: 4px;
+ }
+ .img-cover-ctn{
+     display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .join-btn{
+     width: 100%;
+     bottom: 0;
+     position: absolute;
+     bottom: 0;
+
+ }
+ .btn{
+    margin: 8px 4px;
+    display: flex;
+
+}
+.my-btn:after {
+ display: none;/* 需要设置为按钮圆角的两倍 */
+}
+.my-btn{
+    overflow: hidden;
+    background-color: #FFA500;
+    width: max-content;
+    flex:1;
+    color: #ffffff;
+}

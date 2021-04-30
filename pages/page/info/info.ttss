@@ -1,0 +1,52 @@
+.avatar{
+    width:32px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+ 
+    line-height: 1em;
+    font-size: 16px;
+    border-bottom:rgb(141, 141, 141) 1px solid;
+    margin:0px;
+    padding: 10px;
+ 
+}
+.text{
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+.text-1{
+    flex:1;
+    
+}
+.text-2{
+    width: 100px;
+}
+.container{
+    padding: 4px 12px;
+  
+    
+}
+.input-item{
+    padding-left: 8px
+}
+.btn{
+    margin: 8px 4px;
+    display: flex;
+
+}
+.my-btn:after {
+ display: none;/* 需要设置为按钮圆角的两倍 */
+}
+.my-btn{
+    overflow: hidden;
+    background-color: #FFA500;
+    width: max-content;
+    flex:1;
+    color: #ffffff;
+}

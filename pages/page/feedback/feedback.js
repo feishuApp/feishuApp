@@ -1,0 +1,10 @@
+Page({
+    data:{
+        feedback:""
+    },
+    bindinput:function(e){
+        this.setData({
+            feedback:e.detail.value
+        })
+    }
+})

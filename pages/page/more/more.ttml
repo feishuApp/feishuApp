@@ -1,21 +1,20 @@
+<tab/>
 
-<form class="search">
-    <input class='xsmall' type="text" bindfocus='_input' bindblur='_uninput' style="border-color:{{color}}" placeholder='请输入关键字搜索' maxlength=15></input>
-    <button formType='submit'><text class='iconfont icon-sousuo'></text></button>
-</form>
 <view class="container">
 
 <view class='empty'></view>
 <view tt:for="{{listArry}}">
    
 <view data-index="{{index}}" key="{{item.activID}}" bindtap="navigatorToDetail" >
-<activity-list-item activName="{{item.acti1vName}}"  
-                    activIni="{{item.activIni}}"
-                    activTime="{{item.activTime}}" 
-                    activPlace="{{item.activPlace}}"
-                    activDes="{{item.activDes}}"
-                    activTag="{{item.activTag}}"
-                    data-activid="{{item.activID}}"
+
+<activity-list-item avatarUrl="https://p9-lark-file.byteimg.com/img/lark.avatar/a43e7609-ea41-436d-bf5e-1efdf18759bg~72x72.png"
+                    activDes="ifeel so anxious about my personal performance in the ustc course,they brhava so well that i cannot "
+                    activIni="mingliu"
+                    activName="精彩纷呈"  
+                    activPlace="龙湖天街"
+                    activTag='"二次元","游戏"'
+                    activPlace="龙湖时代天街"
+                    coverUrl="https://n.sinaimg.cn/games/transform/761/w512h249/20210309/0c81-kmeeius1641632.png"
                     />
 </view>
 

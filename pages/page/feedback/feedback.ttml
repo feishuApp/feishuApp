@@ -1,0 +1,3 @@
+<view class="textarea">
+<textarea placeholder="您的意见对我们十分重要" value="{{feedback}}"/>
+</view>

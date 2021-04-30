@@ -1,6 +1,3 @@
-const date = new Date()
-const years = []
-const months = []
 
 Page({
 
@@ -16,16 +13,17 @@ Page({
   },
   // 发起活动按钮触发
   onSettingUp:function() {
-    var _this = this
+    let _this = this
     if (_this.data.isshow1 == false)
      { _this.setData({ isshow1: true,create:false })}
     else
       {_this.setData({ isshow1: false,create:true })
     }
+    
   },
   // 参与活动按钮触发
 onJoing:function() {
-    var _this = this
+    let _this = this
     if (_this.data.isshow2 == false)
       _this.setData({ isshow2: true,join:false })
     else
@@ -51,7 +49,7 @@ onJoing:function() {
   onLoad:function(){
     let that = this
     console.log(that)
-    //如果不存在session的话
+    //如果存在session的话
     tt.checkSession({
       success: function () {
         console.log("session not expired.");

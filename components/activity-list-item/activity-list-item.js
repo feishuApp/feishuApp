@@ -1,12 +1,15 @@
 Component(
     {
         properties: {
-            activTag:String,
-            activName:String,
+            avatarUrl:String,
+            activPlace:String,
+            activTag:Array,
+            dataActivid:String,
+            activDes:String,
             activIni:String,
             activTime:String,
-            activPlace:String,
-            activDes:String,
+            activName:String,
+            coverUrl:String,
            },
     }
 )

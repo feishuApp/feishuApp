@@ -1,0 +1,9 @@
+<view class="wrapper">
+<block tt:for="{{textArr}}">
+<view class="item" data-index="{{index}}" bindtap="itemChange" style="border-bottom:{{index==activeOne?
+'3px solid #FFA500':'none'
+}}">
+<text>{{item}}</text>
+</view>
+</block>
+</view>

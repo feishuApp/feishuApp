@@ -3,6 +3,7 @@ Component({
     properties: {
      activityName:String,
      goingOn:Boolean,
+     
     },
     // 私有数据，可用于模版渲染
     data: {},

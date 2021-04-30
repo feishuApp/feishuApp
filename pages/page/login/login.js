@@ -1,39 +1,34 @@
 import _showModal from "../../../utils/_showModal";
+import { getSession } from "../../../networks/index";
 Page({
   data: {
     code: tt.getStorageSync("login.code"),
-    authed:false,
+    authed: false,
     isLogin: false,
   },
   onLoad: function () {
-   this._checkSession()
+    this._checkSession();
   },
-  
 
   _checkSession() {
-    const that = this
+    const that = this;
     tt.getSetting({
       success(res) {
         let scopeValue = res.authSetting["scope.userInfo"];
-        console.log(scopeValue)
         if (undefined === scopeValue || null === scopeValue || scopeValue) {
-        
           that.setData({
-            authed:true
-          })
-          
-        } 
+            authed: true,
+          });
+        }
       },
     });
   },
   loginByFeishu: function () {
-    
-    
     if (this.data.authed) {
-      this.__login()
-     
+      this.__login();
+
       tt.switchTab({
-        url: '/pages/page/index/index' // 指定页面的url;
+        url: "/pages/page/index/index", // 指定页面的url;
       });
     } else {
       this.authorizeWithUserInfo({
@@ -77,14 +72,24 @@ Page({
       },
     });
   },
-//获取用户信息
+  //获取用户信息
   __getUserInfo: function () {
     const that = this;
 
     tt.getUserInfo({
       success: function (res) {
         console.log(res);
-        tt.setStorageSync('userinfo', res.userInfo);
+        tt.setStorageSync("userinfo", res.userInfo);
+        console.log(that.data.code);
+        let { avatarUrl, nickName } = res.userInfo;
+        console.log(avatarUrl, nickName);
+        getSession({ code: that.data.code, nickName, avatarUrl })
+          .then((res) => {
+            console.log(res);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
       },
       fail: function () {
         console.log("获取用户信息失败");
@@ -104,11 +109,14 @@ Page({
           });
 
           try {
+            //向服务器端请求全局session用于其他请求
+
             tt.setStorageSync("login.code", res.code);
+
             that.__getUserInfo();
-            console.log("登录成功")
+            console.log("登录成功");
           } catch (error) {
-            console.log(`setStorageSync failed`);
+            console.log(`setStorageSync failed` + error.message);
           }
         } else {
           tt.showModal({

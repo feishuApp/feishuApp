@@ -1,0 +1,89 @@
+Date : 2021-04-20 23:02:11
+Directory : c:\Users\mingliu\Desktop\code\js\feishu\demo
+Total : 45 files,  2050 codes, 49 comments, 185 blanks, all 2284 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          1 |        866 |          0 |         72 |        938 |
+| JavaScript |         15 |        505 |         49 |         49 |        603 |
+| CSS        |         11 |        445 |          0 |         31 |        476 |
+| ttml       |         10 |        143 |          0 |         26 |        169 |
+| JSON       |          7 |         79 |          0 |          6 |         85 |
+| Markdown   |          1 |         12 |          0 |          1 |         13 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                   | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                      |         45 |      2,050 |         49 |        185 |      2,284 |
+| components                                                                                             |         12 |        250 |         20 |         18 |        288 |
+| components\acti-setup-form                                                                             |          3 |        110 |         17 |         11 |        138 |
+| components\activity-list-item                                                                          |          3 |        108 |          0 |          3 |        111 |
+| components\partin-activity-item                                                                        |          3 |         32 |          3 |          1 |         36 |
+| components\search-input                                                                                |          3 |          0 |          0 |          3 |          3 |
+| networks                                                                                               |          2 |         62 |          9 |          7 |         78 |
+| pages                                                                                                  |         23 |        754 |         12 |         77 |        843 |
+| pages\page                                                                                             |         23 |        754 |         12 |         77 |        843 |
+| pages\page\detail                                                                                      |          3 |         13 |          0 |          1 |         14 |
+| pages\page\index                                                                                       |          4 |        218 |          4 |         21 |        243 |
+| pages\page\login                                                                                       |          4 |        148 |          4 |         12 |        164 |
+| pages\page\more                                                                                        |          4 |        164 |          3 |          9 |        176 |
+| pages\page\partin                                                                                      |          4 |         45 |          1 |          5 |         51 |
+| pages\page\user                                                                                        |          4 |        166 |          0 |         29 |        195 |
+| utils                                                                                                  |          2 |         46 |          8 |          3 |         57 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                               | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\apidoc.html                                               | HTML       |        866 |          0 |         72 |        938 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\app.js                                                    | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\app.json                                                  | JSON       |         41 |          0 |          4 |         45 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\app.ttss                                                  | CSS        |          0 |          0 |          1 |          1 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\acti-setup-form\acti-setup-form.js             | JavaScript |         63 |         17 |          8 |         88 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\acti-setup-form\acti-setup-form.ttml           | ttml       |         34 |          0 |          1 |         35 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\acti-setup-form\acti-setup-form.ttss           | CSS        |         13 |          0 |          2 |         15 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\activity-list-item\activity-list-item.js       | JavaScript |         12 |          0 |          0 |         12 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\activity-list-item\activity-list-item.ttml     | ttml       |         10 |          0 |          0 |         10 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\activity-list-item\activity-list-item.ttss     | CSS        |         86 |          0 |          3 |         89 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\partin-activity-item\partin-activity-item.js   | JavaScript |         14 |          3 |          1 |         18 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\partin-activity-item\partin-activity-item.ttml | ttml       |          4 |          0 |          0 |          4 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\partin-activity-item\partin-activity-item.ttss | CSS        |         14 |          0 |          0 |         14 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\search-input\search-input.js                   | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\search-input\search-input.ttml                 | ttml       |          0 |          0 |          1 |          1 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\components\search-input\search-input.ttss                 | CSS        |          0 |          0 |          1 |          1 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\networks\index.js                                         | JavaScript |         19 |          2 |          1 |         22 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\networks\requests.js                                      | JavaScript |         43 |          7 |          6 |         56 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\detail\detail.js                               | JavaScript |         12 |          0 |          0 |         12 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\detail\detail.ttml                             | ttml       |          1 |          0 |          0 |          1 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\detail\detail.ttss                             | CSS        |          0 |          0 |          1 |          1 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\index\index.js                                 | JavaScript |         70 |          4 |          6 |         80 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\index\index.json                               | JSON       |          8 |          0 |          0 |          8 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\index\index.ttml                               | ttml       |         34 |          0 |         12 |         46 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\index\index.ttss                               | CSS        |        106 |          0 |          3 |        109 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\login\login.js                                 | JavaScript |        121 |          4 |         10 |        135 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\login\login.json                               | JSON       |          4 |          0 |          0 |          4 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\login\login.ttml                               | ttml       |          6 |          0 |          1 |          7 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\login\login.ttss                               | CSS        |         17 |          0 |          1 |         18 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\more\more.js                                   | JavaScript |         48 |          3 |          2 |         53 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\more\more.json                                 | JSON       |          6 |          0 |          0 |          6 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\more\more.ttml                                 | ttml       |         20 |          0 |          4 |         24 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\more\more.ttss                                 | CSS        |         90 |          0 |          3 |         93 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\partin\partin.js                               | JavaScript |         27 |          1 |          3 |         31 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\partin\partin.json                             | JSON       |          6 |          0 |          1 |          7 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\partin\partin.ttml                             | ttml       |          8 |          0 |          1 |          9 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\partin\partin.ttss                             | CSS        |          4 |          0 |          0 |          4 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\user\user.js                                   | JavaScript |         22 |          0 |          6 |         28 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\user\user.json                                 | JSON       |          3 |          0 |          1 |          4 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\user\user.ttml                                 | ttml       |         26 |          0 |          6 |         32 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\pages\page\user\user.ttss                                 | CSS        |        115 |          0 |         16 |        131 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\project.config.json                                       | JSON       |         11 |          0 |          0 |         11 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\readme.md                                                 | Markdown   |         12 |          0 |          1 |         13 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\utils\_showModal.js                                       | JavaScript |         21 |          7 |          2 |         30 |
+| c:\Users\mingliu\Desktop\code\js\feishu\demo\utils\timeFormat.js                                       | JavaScript |         25 |          1 |          1 |         27 |
+| Total                                                                                                  |            |      2,050 |         49 |        185 |      2,284 |
++--------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

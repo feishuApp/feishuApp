@@ -1,0 +1,50 @@
+<!-- 此页面用户个人信息变更和修改 -->
+<view class="container">
+    <view class="bar">
+        <view class="text-1 text"><text>头像</text></view>
+
+        <view class="avatar" bindtap="chooseAvatar">
+            <image src="{{avatarUrl}}"  style="width:100%" mode="widthFix"/>
+        </view>
+    </view>
+<view class="bar">
+    <view class="text-2 text"><text>昵称</text></view>
+    <view class="input-item">
+        <input placeholder="mingliu" bindinput="bindnickNameChange"value="{{nickName}}"/>
+    </view>
+</view>
+<view class="bar">
+    <view class="text-2 text"><text>签名</text></view>
+    <view class="input-item">
+    <input placeholder="这个人很懒，什么都没有留下" value="{{descAndInfo}}" bindinput="bindDescChange"/>
+    </view>
+</view>
+<view class="bar">  
+ <view class="text-2 text">
+   性别 
+  </view>
+  <picker value="{{index}}" range="{{genderArr}}"
+    bindchange="bindPickerChange" >
+    <input class="input-item" value="{{genderArr[index]}}"/>
+    </picker>
+</view>
+<view class="bar">  
+ <view class="text-2 text">
+    生日
+  </view>
+  <picker start="{{dateStart}}" end="{{dateEnd}}" fields="day"  bindchange="bindBirthdateChange"
+  value={{birthDate}}
+    bindchange="bindPickerChange"
+    mode="date"
+     >
+    <input class="input-item" value=""/>
+    </picker>
+</view>
+<view class="btn">
+<button class="my-btn">
+确认修改
+</button>
+
+</view>
+
+</view>

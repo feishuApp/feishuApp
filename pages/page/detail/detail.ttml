@@ -1,1 +1,36 @@
-<text>{{activid}}</text>
+<view class="container">
+<view class="header-item">
+<view class="avatar">
+<image src="{{avatarUrl}}" style="width:100%" mode="widthFix"/>
+</view>
+<view class="nickname">
+<text>{{nickName}}</text>
+</view>
+</view>
+<view class="ctn-main">
+<view>
+{{desc}}
+</view>
+  <view class="tag-ctn">
+   <view class="tag">
+   游戏
+   </view>
+   <view class="tag">
+   二次元
+   </view>
+   </view>
+<view class="img-cover-ctn">
+<block tt-for="{{descImgSrc}}">
+<view class="img-cover">
+<image src="{{item}}"  style="width:100%" mode="widthFix"/>
+<view/>
+</block>
+</view>
+</view>
+<view class="btn">
+<button class="my-btn">
+参加
+</button>
+
+</view>
+</view>

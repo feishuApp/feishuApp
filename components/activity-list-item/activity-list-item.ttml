@@ -1,10 +1,39 @@
-<view class="_container">
-<text class='big'>【{{activTag}}】{{activName}}</text>
-<view class='line'></view>
-<text>发起人：{{activIni}}</text>
-<text>活动时间：{{activTime}}</text>
-<text>活动地点：{{activPlace}}</text>
-<view class='line'></view>
-<text>{{activDes}}
-</text>
+<view class="bar">
+<view class="item-center">
+<view class="item-center-left">
+    <view class="item-top">
+    <view class="avatar">
+    <image src="{{avatarUrl}}" mode="widthFix" style="width:100%"/>
+    
+    </view>
+   <view class="nickname-ctn">
+    <text>{{activIni}}</text>
+   </view>
+  
+
+</view>
+
+    <view class="item-name">
+    <text>{{activName}}</text>
+    </view>
+    <view class="item-bottom">
+    <view class="location-icon">
+    <image src="/resource/icons/location.svg" mode="widthFix" style="width:100%"/>
+
+    </view>
+    <view class="text-3"><text>{{activPlace}}</text></view>
+    <view class="location-icon margin">
+    <image src="/resource/icons/person.svg" mode="widthFix" style="width:100%"/>
+
+    </view>
+    <view class="text-3"><text>{{10}}</text></view>
+    </view> 
+    
+</view>
+<view class="item-center-right">
+ <view class="img-cover">
+    <image src="{{coverUrl}}" mode="widthFix" style="width:100%"/>
+    </view>
+</view>
+</view>
 </view>

@@ -6,7 +6,7 @@
  */
 const ttRequest = ({showLoading = true,url,method='GET',data,timeout=5000})=>{
 
-    const baseUrl = "http://localhost:3001";
+    const baseUrl = "https://fskn6a.api.larkfn.com";
     showLoading&&tt.showLoading({
       title: 'loading...', // 内容
         mask:true,
@@ -23,7 +23,7 @@ const ttRequest = ({showLoading = true,url,method='GET',data,timeout=5000})=>{
     tt.request({
         url:baseUrl+url, // 目标服务器url
         method,
-     
+        data,
         success: (res) => {
             let resp = res
           tt.hideLoading({

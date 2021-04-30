@@ -1,11 +1,16 @@
 {
   "pages":[
+    "pages/page/more/more",
     "pages/page/index/index",
     "pages/page/user/user",
-    "pages/page/more/more",
+    "pages/page/detail/detail",
     "pages/page/login/login",
     "pages/page/partin/partin",
-    "pages/page/detail/detail"
+    "pages/page/sponsor/sponsor",
+    "pages/page/info/info",
+    "pages/page/feedback/feedback"
+  
+  
     
   ],
   "window":{

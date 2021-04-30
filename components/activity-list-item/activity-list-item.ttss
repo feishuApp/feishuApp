@@ -16,73 +16,81 @@
   .icon-sousuo:before {
     content: "\e60d";
   }
-  
-page{
-    background-color: #e2e2e2;
-    width: 100%;
-}
-.container{
-    height: 100%;
-    width: 90%;
-    margin:0 auto;
-    position: relative;
-}
-.search{
-    width: 100%;
-    display: flex;
-    position: fixed;
-    padding:20px;
-    border-bottom: 2px solid #777777;
-    z-index: 3;
-    background-color: #FFF8DC;
-}
-input{
-    border:5px solid #FFA500;
-    margin:5px 0;
-    border-radius: 10px;
-    width: 65%;
-  }
-button{
-    border-radius: 30px;
-    width: 100%;
-    height: 50px;
-    width: 20%;
-    background-color: #FFA500;
-    border:1px solid black;
-    line-height: 50px;
-}
-.empty{
-  height: 90px;
-}
-._container{
-  margin:20px auto;
-  width: 85%;
-  height: 200px;
-  border:3px double rgb(236, 157, 10);
+
+
+
+.bar{
+  height: fit-content ;
   display: flex;
   flex-direction: column;
-  padding:20px;
-  box-shadow: 0 0 10px rgb(121, 121, 121);
-  background-color: #fffbe7;
+  border:rgb(141, 141, 141) 1px solid;
+  margin:12px;
+  padding: 8px;
+  background-color: #eeead9;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(161, 161, 161);
 }
-._container text{
-font-size: 18px;
-width: 90%;
+.margin{
+  margin-left: 4px;
+}
+.text-3{
+  font-size: 12px;
+  line-height: 1em;
+  width:max-content;
+}
+.avatar{
+  width:28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.item-top{
+  display: flex;
+  flex-direction: row;
+  height: 28px;
+}
+.nickname-ctn{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #3498db;
+  font-weight: bold;
+}
+.nickname-ctn text{
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.item-name{
+  font-weight: bold;
+  font-size: 18px;
+  flex:1;
 
 }
-.big{
-font-size: 30px;
-font-weight: bold;
+.item-bottom{
+  display: flex;
+  align-items: center;
 }
-._container .line{
-  width: 90%;
-  height: 2px;
-  background-color: rgb(160, 149, 133);
-  margin:5px 0;
+.img-cover{
+  width:100%;
+  padding-right: 12px;
+
 }
-.more{
-  background-color: rgb(250, 235, 212);
-  border:2px solid rgb(236, 157, 10);
-  padding:10px;
-  text-align: center;
+.location-icon{
+  width:12px;
+}
+.item-center{
+  padding-top: 4px;
+  display: flex;
+  flex-direction: row;
+}
+.item-center-left{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.item-center-right{
+  display: flex;
+  flex:1;
+  flex-direction: column-reverse;
 }

@@ -1,8 +1,7 @@
 <view tt:if="{{listData&&listData.length>0}}">
-<view tt:for="{{listData}}" key="{{item.id}}">
+<view tt:for="{{listData}}" key="{{item.id}}" tt:for-index="idx">
 <partin-activity-item  activity-name="{{item.activityName}}" going-on="{{item.goingon}}"/>
 </view>
-
 </view>
 <view tt:else>
 您还没有参加过任何活动
