@@ -1,6 +1,6 @@
 <view tt:if="{{listData&&listData.length>0}}">
 <view tt:for="{{listData}}" key="{{item.id}}" tt:for-index="idx">
-<partin-activity-item  activity-name="{{item.activityName}}" going-on="{{item.goingon}}"/>
+<partin-activity-item  activity-name="{{item.activityName}}" going-on="{{item.goingOn}}"/>
 </view>
 </view>
 <view tt:else>

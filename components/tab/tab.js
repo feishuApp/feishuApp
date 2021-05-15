@@ -8,6 +8,9 @@ Component({
             this.setData({
                 activeOne:e.currentTarget.dataset.index
             })
+        },
+        _borderBtmClr:function(e){
+            
         }
     }
 })

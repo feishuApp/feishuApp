@@ -24,6 +24,7 @@
 .img-cover{
     margin-bottom: 16px;    
     width: 30%;
+    height: 100px;
     margin: 4px;
 }
 .tag-ctn{

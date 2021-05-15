@@ -5,8 +5,7 @@
     align-items: center;
     padding-left: 20px;
     border:rgb(141, 141, 141) 1px solid;
-    box-shadow: 0 0 5px rgb(161, 161, 161);
-
+ 
 }
 .list-left{
     flex:1

@@ -4,12 +4,11 @@
     <view class="item-top">
     <view class="avatar">
     <image src="{{avatarUrl}}" mode="widthFix" style="width:100%"/>
-    
     </view>
    <view class="nickname-ctn">
     <text>{{activIni}}</text>
    </view>
-  
+    
 
 </view>
 

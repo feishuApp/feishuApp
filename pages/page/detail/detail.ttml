@@ -12,16 +12,15 @@
 {{desc}}
 </view>
   <view class="tag-ctn">
+   <block tt:for="{{tags}}">
    <view class="tag">
-   游戏
+  {{item}}
    </view>
-   <view class="tag">
-   二次元
-   </view>
+   </block>
    </view>
 <view class="img-cover-ctn">
 <block tt-for="{{descImgSrc}}">
-<view class="img-cover">
+<view class="img-cover" bindtap="previewPic" data-index="{{index}}">
 <image src="{{item}}"  style="width:100%" mode="widthFix"/>
 <view/>
 </block>
@@ -29,7 +28,7 @@
 </view>
 <view class="btn">
 <button class="my-btn">
-参加
+{{outOfTime?"已过期":"立即参加"}}
 </button>
 
 </view>

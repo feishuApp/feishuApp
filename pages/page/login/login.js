@@ -81,11 +81,11 @@ Page({
         console.log(res);
         tt.setStorageSync("userinfo", res.userInfo);
         console.log(that.data.code);
-        let { avatarUrl, nickName } = res.userInfo;
+        let { avatarUrl, nickName,country,gender } = res.userInfo;
         console.log(avatarUrl, nickName);
-        getSession({ code: that.data.code, nickName, avatarUrl })
+        getSession({ code: that.data.code, nickName, avatarUrl,country,gender })
           .then((res) => {
-            console.log(res);
+            tt.setStorageSync('session_key', res.result["session_key"]);
           })
           .catch((err) => {
             console.log(err);

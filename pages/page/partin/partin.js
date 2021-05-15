@@ -15,7 +15,7 @@ Page({
       },
       {
         activityName:"王者趣味赛",
-        goingOn:true,
+        goingOn:false,
       },
       {
         activityName:"王者趣味赛",
