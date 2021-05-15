@@ -1,0 +1,15 @@
+.form-wrapper{
+    
+}
+.input-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+  
+}
+.selector-text{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

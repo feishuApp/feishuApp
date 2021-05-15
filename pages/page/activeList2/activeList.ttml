@@ -1,0 +1,19 @@
+<template name="list">
+<view class="tmp-container" bindtap='bindtap'>
+<view class='first'> 
+<view class='tag'>{{tag1}}</view>
+<view class='tag'>{{tag2}}</view>
+<image src='../../../resource/img/1.jpeg'></image>
+</view>
+<view class='name'>{{activeName}}</view>
+<view>创建人:{{founder}}</view>
+<view>活动时间:{{date}}</view>
+<view class='place'>活动地点:{{place}}</view>
+</view>
+</template>
+
+<view class='container'>
+  <view tt:for='{{arr}}'> 
+<template is="list" data="{{...item}}"/>
+</view>
+</view>

@@ -1,0 +1,51 @@
+<view class="container">
+<form bindsubmit='formSubmit'>
+        <view class="avatar" bindtap="chooseAvatar">
+            <image src="{{avatarUrl}}"  style="width:100%" mode="widthFix"/>
+        </view>
+
+<view class="bar">
+    <text>昵称</text>
+    <view class="input-item">
+        <input value="{{nickName}}" name='nickname'/>
+    </view>
+</view>
+
+<view class="bar">
+    <text>签名</text>
+    <view class="input-item">
+    <input value="{{qianming}}" name='qianming'/>
+    </view>
+</view>
+
+<view class="bar">  
+    <text>性别</text>
+    <picker value="{{gender}}" range='["男","女"]' bindchange="bindGenderChange">
+    <input name='gender' class='input-item' value='{{gender}}'/>
+    </picker>
+</view>
+
+<view class="bar">  
+   <text>生日</text>
+    <picker start="1990-01-01" end="2010-01-01" fields="day"  bindchange="bindBirthdateChange"
+    bindchange="bindPickerChange"
+    mode = 'date'
+    value='{{birth}}'
+    >
+    <input name='birth' class='input-item' value='{{birth}}'/>
+    </picker>
+</view>
+
+    <view class="space"><text>个人简介:</text></view>
+    <view class="textarea1">
+        <textarea value="{{jianjie}}" name='jianjie'/>
+    </view>
+
+<view class="btn">
+<button  class="my-btn" formType="submit" >
+确认修改
+</button>
+</view>
+
+</form>
+</view>

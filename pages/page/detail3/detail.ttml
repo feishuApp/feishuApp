@@ -1,0 +1,29 @@
+<view class="container">
+
+<view class="header-item">
+<image src="{{avatarUrl}}" mode="widthFix"/>
+<view class="nickname">{{nickName}}</view>
+</view>
+
+  <view class="tag-ctn">
+   <view class="tag">{{tag1}}</view>
+   <view class="tag">{{tag2}}</view>
+  </view>
+
+
+<view class='desc'>
+{{desc}}
+</view>
+
+
+  <view class='info'>
+  <view>活动地点：{{place}}</view>
+  <view>活动日期：{{date}}</view>
+  </view>
+
+<block tt-for="{{descImgSrc}}">
+<image src="{{item}}"  mode="widthFix" class='showImg'/>
+</block>
+
+<button class="my-btn">参加</button>
+</view>

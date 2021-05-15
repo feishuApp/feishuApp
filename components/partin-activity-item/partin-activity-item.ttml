@@ -1,0 +1,9 @@
+<view class="list-wrapper ">
+<view class="idx">
+
+</view>
+<view class="list-left">{{activityName}}</view>
+<view class="list-right">
+<image src="{{goingon?'/resource/icons/finished.svg':'/resource/icons/goingon.svg'}}" mode="widthFix" style="width:30px"/>
+</view>
+</view>

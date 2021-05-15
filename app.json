@@ -1,9 +1,13 @@
 {
   "pages":[
-     "pages/page/index/index",
-     "pages/page/more/more",
-     "pages/page/user/user"
-   
+    "pages/page/index/index",
+    "pages/page/activeList2/activeList",
+    "pages/page/detail3/detail",
+    "pages/page/feedback2/feedback",
+    "pages/page/info2/info",
+    "pages/page/more/more",
+    "pages/page/user/user",
+    "pages/page/sponsor2/sponsor"
   ],
   "window":{
     "backgroundTextStyle":"light",

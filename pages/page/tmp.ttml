@@ -5,18 +5,10 @@
 <view class='tag'>标签qwe</view>
 <image src='../../../resource/img/1.jpeg'></image>
 </view>
-<view class='name'>什么什么活动名</view>
+<view class='name'>{{text}}什么什么活动名</view>
 <view>创建人:小明</view>
 <view>活动时间:2020-20-20</view>
 <view class='place'>活动地点:电子科大清水河图书馆a区桌子上地方长了省略号</view>
 </view>
 </template>
-<tab/>
 
-<view class="container">
-
-<view tt:for="{{listArry}}">
-<template is='list'/>
-</view>
-<view tt:if="{{reactBottomloading}}">loading...</view>
-</view>

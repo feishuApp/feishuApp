@@ -1,0 +1,26 @@
+.list-wrapper{
+    display: flex;
+    font-size: 16px;
+    height: 45px;
+    align-items: center;
+    padding-left: 20px;
+    border:rgb(141, 141, 141) 1px solid;
+    box-shadow: 0 0 5px rgb(161, 161, 161);
+
+}
+.list-left{
+    flex:1
+}
+.list-right{
+width: 70px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.idx{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
