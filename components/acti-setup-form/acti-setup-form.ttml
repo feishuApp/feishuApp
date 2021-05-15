@@ -3,11 +3,11 @@
 <form>
  <view class="input-item">
  <text>名称：</text>
- <input placeholder="取个好听的名字？" style="padding-left:12px" bindinput="_bindNameChange"/>
+ <input placeholder="取个好听的名字？" style="padding-left:12px" bindinput="_bindNameChange" value="{{name}}"/>
  </view>
 <view class="input-item">
  <text>时间：</text>
-<picker mode="time" value="{{time}}" start="{{timeStart}}" end="{{timeEnd}}"
+<picker mode="time" start="{{timeStart}}" end="{{timeEnd}}"
    bindchange="_bindTimeChange"
    >
  <input placeholder="{{time}}" style="padding-left:12px;box-sizing:border-box" value="{{time}}"/>
@@ -15,10 +15,10 @@
 </view>
  <view class="input-item">
  <text>日期：</text>
-  <picker mode="date" start="{{date}}" start="{{ dateStart}}" end="{{dateEnd}}" fields="day" value={{date}}
+  <picker mode="date" start="{{date}}" start="{{ dateStart}}" end="{{dateEnd}}" fields="day"
   bindchange="_bindDateChange"
   >
-    <input placeholder="{{date}}" style="padding-left:12px" value="{{date}}"/>
+    <input placeholder="{{date}}"  style="padding-left:12px" value="{{date}}"/>
  </picker>
  </view>
  <view class="input-item">

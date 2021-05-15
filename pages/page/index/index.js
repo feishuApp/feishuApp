@@ -11,6 +11,7 @@ Page({
    
     color:['','','','','']
   },
+
   // 发起活动按钮触发
   onSettingUp:function() {
     let _this = this

@@ -46,7 +46,7 @@ Component({
         })
     }
     ,
-    _bindNameChange:function(){
+    _bindNameChange:function(e){
         console.log("nameChange")
         this.setData({
             name: e.detail.value
@@ -61,14 +61,29 @@ Component({
     },
     _bindSetup:function(){
         //发起活动
+        if(tt.getStorageSync('open_id')==""){
+            tt.showToast({
+              title: '请先登录！', // 内容
+              icon:"none",
+            });
+            return
+        }
         CreateActivity({
             name:this.data.name,
-            description:this.data.sesc,
+            description:this.data.desc,
             position:this.data.position,
-            start:this.data.timeStart,
+            start:this.data.time+";"+this.data.date,
+            end:"",
+            open_id:tt.getStorageSync('open_id'),
+            capacity:2,
+            tags:[],
         })
         .then(res=>{
-            console.log(res)
+            if(res.code==1){
+                tt.showToast({
+                  title: `活动发起成功,邀请码为{res.data.invite_code}`, // 内容
+                });
+            }
         })
         .catch(err=>{
 

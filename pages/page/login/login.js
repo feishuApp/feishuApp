@@ -78,17 +78,18 @@ Page({
 
     tt.getUserInfo({
       success: function (res) {
-        console.log(res);
         tt.setStorageSync("userinfo", res.userInfo);
         console.log(that.data.code);
         let { avatarUrl, nickName,country,gender } = res.userInfo;
         console.log(avatarUrl, nickName);
         getSession({ code: that.data.code, nickName, avatarUrl,country,gender })
           .then((res) => {
+            console.log(res)
             tt.setStorageSync('session_key', res.result["session_key"]);
+            tt.setStorageSync('open_id', res.result["open_id"]);
           })
           .catch((err) => {
-            console.log(err);
+            console.log(err); 
           });
       },
       fail: function () {
