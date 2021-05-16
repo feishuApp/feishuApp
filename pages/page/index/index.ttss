@@ -51,7 +51,7 @@ flex-direction: column;
   right: -15px;
 }
 .create{
-  height: 240px;
+  height: 300px;
   border:10px dotted #eeead9;
   top:145px;
 }

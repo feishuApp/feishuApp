@@ -1,3 +1,4 @@
+import {modifyUserData} from '../../../networks/index'
 Page({
     data:{
         birthDate:"",
@@ -7,7 +8,7 @@ Page({
         descAndInfo:"",
         index:0,
         nickName:"",
-        avatarUrl:"https://p6-lark-file.byteimg.com/img/lark.avatar/a43e7609-ea41-436d-bf5e-1efdf18759bg~72x72.png"
+        avatarUrl:tt.getStorageSync('userinfo').avatarUrl,
     },
     chooseAvatar:function(e){
         const that = this

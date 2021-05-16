@@ -1,5 +1,5 @@
-<view class="form-wrapper">
 
+<view class="form-wrapper">
 <form>
  <view class="input-item">
  <text>名称：</text>
@@ -25,13 +25,23 @@
  <text>地点：</text>
  <input placeholder="活动地点呢？" style="padding-left:12px" bindinput="_bindposChange"/>
  </view>
+  <view class="tag-ctn">
+   <block tt:for="{{tags}}">
+   <view class="tag" bindtap="chooseTag" data-index="{{index}}" style="{{item.active?'background-color:red':'background-color:none'}}">
+  {{item.name}}
+   </view>
+   </block>
+   </view>
+
  <view style="padding:4px">
  <textarea placeholder="活动的详细描述.。。。" bindinput="_bindDescChange"
 style="height:1.5em"
  />
+
  </view>
 <view>
 <button type="default" style="border:none" bindtap="_bindSetup">提交</button>
 </view>
 </form>
+
 </view>

@@ -14,7 +14,26 @@ Component({
         desc:'',
         //活动地点
         position:"",
-        name:''
+        name:'',
+        tags:[{
+            name:'二次元',
+            active:false
+        },
+        {
+            name:'游戏',
+            active:false
+        },
+        {
+            name:'剧本杀',
+            active:false
+        },
+        {
+            name:'音乐',
+            active:false
+        },
+        
+    ],
+        choosedTag:[],
 
     },
     attached:function(){
@@ -23,6 +42,18 @@ Component({
  
     methods:{
 
+    
+    chooseTag:function(e){
+        console.log(e.target)   
+       let {index} = e.target.dataset
+        //其中含有这个标签
+        let {tags} = this.data
+        tags[index].active = !tags[index].active
+        console.log(tags)
+        this.setData({
+            tags:tags,
+        })
+    },
 
     //todo:此处过于频繁setData，实际上应该考虑使用时间委托，即把监听器放置顶层dom，通过冒泡机制捕捉实现监听
     //对于input组件许哦封装
@@ -68,6 +99,15 @@ Component({
             });
             return
         }
+        let {name,desc,position,time,date} = this.data
+        if([name,desc,position,time,date].some(v=>v==""||undefined||null)){
+            tt.showToast({
+                title: '请正确填写信息！', // 内容
+                icon:"none",
+              });
+              return
+        }
+        const choosedTags = this.data.tags.filter(v=>v.active).map(v=>v.name)
         CreateActivity({
             name:this.data.name,
             description:this.data.desc,
@@ -76,17 +116,19 @@ Component({
             end:"",
             open_id:tt.getStorageSync('open_id'),
             capacity:2,
-            tags:[],
+            tags:choosedTags,
         })
         .then(res=>{
             if(res.code==1){
                 tt.showToast({
-                  title: `活动发起成功,邀请码为{res.data.invite_code}`, // 内容
+                  title: `活动发起成功`, // 内容
                 });
             }
         })
         .catch(err=>{
-
+            tt.showToast({
+                title: `出错了`, // 内容
+              });
         })
     }
     },

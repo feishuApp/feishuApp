@@ -14,7 +14,7 @@ Page({
       .then(res=>{
         console.log(res)
         that.setData({
-          listArry:res,
+          listArry:res.data,
         })
       })
       .catch((err)=>{
@@ -28,7 +28,7 @@ Page({
     },
     // 跳转到detail页
     navigatorToDetail:function(e){
-        console.log(e.target)
+      
       tt.navigateTo({
         url: `/pages/page/detail/detail?activid=${e.target.dataset.activid}` // 指定页面的url;
       });
@@ -42,9 +42,7 @@ Page({
     onReachBottom: function() {
       // 页面触底时执行
       console.log("reach bottom")
-      this.setData({
-        
-      })
+      
       this.setData({
         listArry:[...this.data.listArry,...this.data.listArry]
       })

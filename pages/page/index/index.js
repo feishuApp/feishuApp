@@ -1,4 +1,4 @@
-
+import {FindActivityByCode} from '../../../networks/index'
 Page({
 
   data:{
@@ -8,10 +8,14 @@ Page({
     isshow2: true,
     create:false,
     join:false,
-   
+    searchCode:"",
     color:['','','','','']
   },
-
+  _bindCodeChange:function(e){
+    this.setData({
+      searchCode: e.detail.value
+  })
+  },
   // 发起活动按钮触发
   onSettingUp:function() {
     let _this = this
@@ -21,6 +25,31 @@ Page({
       {_this.setData({ isshow1: false,create:true })
     }
     
+  },
+  //查找活动
+  findActive:function(){
+    FindActivityByCode({invite_code:this.data.searchCode})
+    .then(res=>{
+      if(res.code==1){
+      const {id} = res.data
+        
+      tt.navigateTo({
+        url: `/pages/page/detail/detail?activid=${this.data.searchCode}` // 指定页面的url;
+      });
+      }
+      else{
+        tt.showToast({
+          title: '活动不存在', // 内容 
+          icon:"none"
+        });
+      }
+    })
+    .catch(err=>{
+      tt.showToast({
+        title: '出错了', // 内容 
+        icon:"none"
+      });
+    })
   },
   // 参与活动按钮触发
 onJoing:function() {

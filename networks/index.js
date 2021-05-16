@@ -13,10 +13,18 @@ const getSession = async(data)=>{
 const CreateActivity = async(data)=>{
   return requests({url:'/CreateActivity',data,method:"POST"});
 }
+const FindActivityByCode= async(data)=>{
+    return requests({url:"/FindActivityByCode",method:'GET',data});
+}
 
+//修改用户信息
+const modifyUserData = async(data)=>{
+  return requests({url:"/",method:""});
+}
 export {
     getActivityData,
     getBannerData,
     getSession,
-    CreateActivity
+    CreateActivity,
+    FindActivityByCode
 }

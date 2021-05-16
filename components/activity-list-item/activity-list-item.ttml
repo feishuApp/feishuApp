@@ -25,7 +25,7 @@
     <image src="/resource/icons/person.svg" mode="widthFix" style="width:100%"/>
 
     </view>
-    <view class="text-3"><text>{{10}}</text></view>
+    <view class="text-3"><text>{{Capacity}}</text></view>
     </view> 
     
 </view>

@@ -10,6 +10,7 @@ Component(
             activTime:String,
             activName:String,
             coverUrl:String,
+            Capacity:Number
            },
     }
 )

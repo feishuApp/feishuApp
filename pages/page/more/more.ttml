@@ -7,17 +7,29 @@
    
 <view data-index="{{index}}" key="{{item.activID}}" bindtap="navigatorToDetail" >
 
-<activity-list-item avatarUrl="https://p9-lark-file.byteimg.com/img/lark.avatar/a43e7609-ea41-436d-bf5e-1efdf18759bg~72x72.png"
-                    activDes="ifeel so anxious about my personal performance in the ustc course,they brhava so well that i cannot "
-                    activIni="mingliu"
-                    activName="精彩纷呈"  
-                    activPlace="龙湖天街"
-                    activTag='"二次元","游戏"'
-                    activPlace="龙湖时代天街"
+<activity-list-item avatarUrl="{{item.user_avatarUrl}}"
+                    activDes="{{item.Description}}"
+                    activIni="{{item.user_nickName}}"
+                    activName="{{item.Name}}"  
+                    activPlace="{{item.Position}}"
+                    activTag='{{item.Tags}}'
+                    Capacity='{{item.Capacity}}'
                     coverUrl="https://n.sinaimg.cn/games/transform/761/w512h249/20210309/0c81-kmeeius1641632.png"
                     />
 </view>
-
+<!-- Capacity: 2
+Description: "色情色情"
+EndAt: ""
+Name: "去死去死"
+Position: "qs"
+StartAt: 1624079009000
+Tags: []
+id: 10
+open_id: "ou_876a1b80b3496876a25b00fb41667390"
+user_avatarUrl: "https://p6-lark-file.byteimg.com/img/lark.avatar/a43e7609-ea41-436d-bf5e-1efdf18759bg~72x72.png"
+user_gender: ""
+user_id: 1
+user_nickName: "刘明" -->
 </view>
 <view tt:if="{{reactBottomloading}}">loading...</view>
 </view>

@@ -21,8 +21,9 @@
 
 <view class='join yel' style='display:{{join?"block":"none"}}'>
 <form catchsubmit=''>
-<input name='activId' bindfocus='input' bindblur='uninput' data-id=4 style="border-color:{{color[4]}}"  type='number' placeholder='请输入活动暗号' maxlength=6></input>
-<button formType='submit' class='ora' bindtap="createActive">提交</button>
+<input name='activId' bindfocus='input' bindblur='uninput' data-id=4 style="border-color:{{color[4]}}"  type='number' placeholder='请输入活动暗号' maxlength=6  bindinput="_bindCodeChange" value="{{searchCode}}"></input>
+<button class='ora' bindtap="findActive"
+>查找</button>
 </form>
 </view>
 
