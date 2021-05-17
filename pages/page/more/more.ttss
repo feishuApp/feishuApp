@@ -5,6 +5,7 @@
     font-style: normal;
     font-display: swap;
 }
+@import url(../tmp.ttss);
 .iconfont {
     font-family: "iconfont" ;
     font-size: 30px;
@@ -26,4 +27,10 @@ page{
     padding:0 8px;
 
     position: relative;
+}
+.loadingText{
+  display: flex;
+  align-items: center;
+  height: 1em;
+  justify-content: space-evenly;
 }

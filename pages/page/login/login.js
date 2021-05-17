@@ -78,7 +78,7 @@ Page({
 
     tt.getUserInfo({
       success: function (res) {
-        tt.setStorageSync("userinfo", res.userInfo);
+  
         console.log(that.data.code);
         let { avatarUrl, nickName,country,gender } = res.userInfo;
         console.log(avatarUrl, nickName);

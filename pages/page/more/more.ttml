@@ -2,7 +2,6 @@
 
 <view class="container">
 
-<view class='empty'></view>
 <view tt:for="{{listArry}}">
    
 <view data-index="{{index}}" key="{{item.activID}}" bindtap="navigatorToDetail" >
@@ -19,5 +18,5 @@
 </view>
 
 </view>
-<view tt:if="{{reactBottomloading}}">loading...</view>
+<view tt:if="{{reactBottomloading}}" class="loadingText">loading...</view>
 </view>

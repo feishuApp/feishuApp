@@ -1,0 +1,5 @@
+@import '../tmp.ttss';
+body{
+  background-color: rgb(252, 242, 229) ;
+  padding-bottom: 20px;
+}

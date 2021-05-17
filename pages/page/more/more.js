@@ -5,7 +5,9 @@ Page({
     data: {
       listArry:[],
       color: '',
-      reactBottomloading:false
+      skip:0,
+      reactBottomloading:false,
+      flag:true,
     },
     onLoad: function () {
       const that = this
@@ -43,8 +45,30 @@ Page({
       // 页面触底时执行
       console.log("reach bottom")
       
-      this.setData({
-        listArry:[...this.data.listArry,...this.data.listArry]
-      })
+      if(this.data.flag){
+        this.setData({
+          skip:this.data.skip+1,
+          flag:false,
+          reactBottomloading:true,
+        })
+        getActivityData({limit:10,offset:this.data.skip})
+        .then(res=>{
+          console.log(res)
+          
+         this.setData({
+            listArry:Object.assign({},this.data.listArry,res.data),
+            flag:true,
+            reactBottomloading:false,
+          })
+        })
+        .catch((err)=>{
+          console.log("err")
+          tt.showToast({
+            title: err,
+            duration: 1000,
+            icon:"none",
+        });
+        })
+      }
     },
 })

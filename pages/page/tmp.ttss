@@ -1,0 +1,46 @@
+.tmp-container{
+  font-size: 15px;
+  width: 85%;
+  height: 120px;
+  border:2px solid #FFA500;
+  background-color: rgb(237, 240, 240);
+  border-radius: 10px;
+  margin:15px auto;
+  position: relative;
+  padding:5px;
+}
+.tmp-container .first{
+display: flex;
+flex-direction: row;
+}
+.tmp-container .tag{
+  font-size: 15px;
+  color:red;
+  border:1px solid red;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  margin:4px
+}
+.tmp-container image{
+  position: absolute;
+  left: 45%;
+  top:10px;
+  width: 50%;
+  height: 60%;
+  border:1px black solid;
+}
+.tmp-container .name{
+  width: 45%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tmp-container .place{
+width: 90%;
+overflow: hidden;
+white-space: nowrap;
+text-overflow:ellipsis
+}

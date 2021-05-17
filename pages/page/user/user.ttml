@@ -3,8 +3,8 @@
 <view class='info'>
 <image src='{{userinfo.avatarUrl}}' class='avatar'> </image>
 <view class="info-text">
-<view>{{userinfo.nickName}}</view>
-<view class='small'>这个人很懒，什么都没有留下</view>
+<view>{{userinfo.Name}}</view>
+<view class='small'>{{userinfo.Description}}</view>
 </view>
 
 </view>

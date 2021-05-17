@@ -37,7 +37,6 @@
  <textarea placeholder="活动的详细描述.。。。" bindinput="_bindDescChange"
 style="height:1.5em"
  />
-
  </view>
 <view>
 <button type="default" style="border:none" bindtap="_bindSetup">提交</button>

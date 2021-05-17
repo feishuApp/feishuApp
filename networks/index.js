@@ -1,6 +1,6 @@
 import requests from './requests';
-const getActivityData =async ()=>{
-  return requests({url:"/FindActiveActivities"});
+const getActivityData =async (data)=>{
+  return requests({url:"/FindActiveActivities",data,method:"GET"});
 }
 const getBannerData =async ()=>{
     return requests({url:"/banner"});
@@ -21,11 +21,15 @@ const FindActivityByCode= async(data)=>{
 const modifyUserData = async(data)=>{
   return requests({url:"/SetUserInfo",method:"POST",data});
 }
+const getUserInfo = async(data)=>{
+  return requests({url:"/GetUserInfoByOpenid",method:"POST",data})
+}
 export {
     getActivityData,
     getBannerData,
     getSession,
     CreateActivity,
     FindActivityByCode,
-    modifyUserData
+    modifyUserData,
+    getUserInfo
 }

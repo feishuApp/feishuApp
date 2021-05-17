@@ -1,0 +1,17 @@
+.textarea{
+    border:2px solid #FFA500;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin:0 auto;
+    margin-top:20%;
+}
+
+body{min-height: 50%;background-color: rgb(252, 242, 229);}
+
+.mini-btn{
+    width: 90%;
+    background-color: #FFA500;
+    color: #ffffff;
+    margin-top: 10px;
+}

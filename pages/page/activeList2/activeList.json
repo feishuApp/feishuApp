@@ -1,0 +1,7 @@
+{
+   "usingComponents": {
+      "partin-activity-item":"/components/partin-activity-item/partin-activity-item"
+   },
+   "navigationBarTitleText": "参加过的活动"
+
+  }

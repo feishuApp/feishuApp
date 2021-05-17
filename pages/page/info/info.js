@@ -24,7 +24,7 @@ Page({
             success (res) {
                 console.log(res.tempFilePaths);
                     that.setData({
-                    avatarUrl:res.tempFilePaths
+                    avatarUrl:res.tempFilePaths[0]
                 })
             },
             fail (res) {
