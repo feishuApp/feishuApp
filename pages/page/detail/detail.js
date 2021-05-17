@@ -38,6 +38,7 @@ Page({
                 // tags: (2) ["二次元", "游戏"]
             }
             else{
+                console.log(res)
                 tt.showToast({
                   title: '出错了', // 内容
                   icon:'none',

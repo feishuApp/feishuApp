@@ -37,11 +37,11 @@
     bindchange="bindPickerChange"
     mode="date"
      >
-    <input class="input-item" value=""/>
+    <input class="input-item" value="{{birthDate}}"/>
     </picker>
 </view>
 <view class="btn">
-<button class="my-btn">
+<button class="my-btn" bindtap="modifyInfo">
 确认修改
 </button>
 

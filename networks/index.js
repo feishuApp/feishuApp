@@ -19,12 +19,13 @@ const FindActivityByCode= async(data)=>{
 
 //修改用户信息
 const modifyUserData = async(data)=>{
-  return requests({url:"/",method:""});
+  return requests({url:"/SetUserInfo",method:"POST",data});
 }
 export {
     getActivityData,
     getBannerData,
     getSession,
     CreateActivity,
-    FindActivityByCode
+    FindActivityByCode,
+    modifyUserData
 }
