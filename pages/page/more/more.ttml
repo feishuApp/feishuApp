@@ -1,22 +1,23 @@
-<template name="list">
-<view class="tmp-container" bindtap='bindtap'>
-<view class='first'> 
-<view class='tag'>标签</view>
-<view class='tag'>标签qwe</view>
-<image src='../../../resource/img/1.jpeg'></image>
-</view>
-<view class='name'>什么什么活动名</view>
-<view>创建人:小明</view>
-<view>活动时间:2020-20-20</view>
-<view class='place'>活动地点:电子科大清水河图书馆a区桌子上地方长了省略号</view>
-</view>
-</template>
 <tab/>
 
 <view class="container">
 
 <view tt:for="{{listArry}}">
-<template is='list'/>
+   
+<view data-index="{{index}}" key="{{item.id}}" bindtap="navigatorToDetail" >
+
+<activity-list-item avatarUrl="{{item.user_avatarUrl}}"
+                    data-activid="{{item.id}}"
+                    activDes="{{item.Description}}"
+                    activIni="{{item.user_nickName}}"
+                    activName="{{item.Name}}"  
+                    activPlace="{{item.Position}}"
+                    activTag='{{item.Tags}}'
+                    Capacity='{{item.Capacity}}'
+                    coverUrl="https://n.sinaimg.cn/games/transform/761/w512h249/20210309/0c81-kmeeius1641632.png"
+                    />
 </view>
-<view tt:if="{{reactBottomloading}}">loading...</view>
+
+</view>
+<view tt:if="{{reactBottomloading}}" class="loadingText">loading...</view>
 </view>

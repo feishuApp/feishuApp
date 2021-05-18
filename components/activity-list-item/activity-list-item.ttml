@@ -1,39 +1,26 @@
-<view class="bar">
-<view class="item-center">
-<view class="item-center-left">
-    <view class="item-top">
-    <view class="avatar">
-    <image src="{{avatarUrl}}" mode="widthFix" style="width:100%"/>
-    
-    </view>
-   <view class="nickname-ctn">
-    <text>{{activIni}}</text>
-   </view>
-  
+<view class="bar"> 
 
-</view>
-
-    <view class="item-name">
-    <text>{{activName}}</text>
+    <view class="top">
+    <view class="avatar"><image src="{{avatarUrl}}" mode="widthFix" style="width:100%"/> </view>
+    <view class="name">{{activIni}}</view>  
     </view>
-    <view class="item-bottom">
-    <view class="location-icon">
-    <image src="/resource/icons/location.svg" mode="widthFix" style="width:100%"/>
 
-    </view>
-    <view class="text-3"><text>{{activPlace}}</text></view>
-    <view class="location-icon margin">
-    <image src="/resource/icons/person.svg" mode="widthFix" style="width:100%"/>
+    <view class="acname">{{activName}}</view>
 
-    </view>
-    <view class="text-3"><text>{{10}}</text></view>
+    <view class="bottom">
+    <image class="icon" src="/resource/icons/cloc.png" mode="widthFix"/>
+    <view>活动时间{{activeTime}}</view>
     </view> 
-    
-</view>
-<view class="item-center-right">
- <view class="img-cover">
-    <image src="{{coverUrl}}" mode="widthFix" style="width:100%"/>
-    </view>
-</view>
-</view>
+
+    <view class="bottom">
+    <image class="icon" src="/resource/icons/person.svg" mode="widthFix"/>
+    <view>{{10}}</view>
+    <image class="icon" src="/resource/icons/location.svg" mode="widthFix"/>
+    <view class='place'>{{activPlace}}aaaaaaaaaaaaaaaaaaaaaaaaaa</view>
+    </view> 
+
+
+    <image class="img_right" src="{{coverUrl}}"/>
+
+
 </view>

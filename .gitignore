@@ -1,0 +1,4 @@
+#不提交node_module
+node_modules/
+.vscode
+.VSCodeCounter

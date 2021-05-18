@@ -14,7 +14,7 @@ body{
   height: 40px;
   line-height: 40px;
 }
-image{
+.ava{
     width: 40px;
     border-radius: 50%;
     overflow: hidden;
@@ -25,7 +25,8 @@ image{
     flex-direction: row;
 }
 .tag{
-    margin:10px 5px;
+    margin-top:10px;
+    margin-left:5px;
     border:1px solid orange;
     border-radius: 10px;
     height: 20px;
@@ -33,20 +34,28 @@ image{
     font-size:15px ;
     padding:4px
 }
+.name{
+    margin:15px;
+    font-size: 25px;
+    font-weight: bold;
+}
 .desc{
-    margin-bottom: 15px;
+    margin:15px;
     font-size: 19px;
-    color:rgb(53, 53, 53)
+    color:rgb(80, 80, 80)
 }
 .info{
     margin: 15px;
     color: #FFA500;;
     font-size: 15px;
 }
+.img_cover{
+    display: flex;
+    flex-direction: row;
+}
 .showImg{
     width: 120px;
     height: 120px;
-    border-radius: 0;
     margin:5px;
 }
 .my-btn{

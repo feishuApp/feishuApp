@@ -1,51 +1,40 @@
 <view class="container">
-<form bindsubmit='formSubmit'>
-        <view class="avatar" bindtap="chooseAvatar">
-            <image src="{{avatarUrl}}"  style="width:100%" mode="widthFix"/>
-        </view>
+    <view class="avatar" bindtap="chooseAvatar">
+        <image src="{{avatarUrl}}"  style="width:100%" mode="widthFix"/>
+    </view>
 
 <view class="bar">
     <text>昵称</text>
     <view class="input-item">
-        <input value="{{nickName}}" name='nickname'/>
+        <input placeholder="未设置" bindinput="bindnickNameChange" value="{{nickName}}"/>
     </view>
 </view>
-
 <view class="bar">
     <text>签名</text>
     <view class="input-item">
-    <input value="{{qianming}}" name='qianming'/>
+    <input placeholder="未设置" value="{{descAndInfo}}" bindinput="bindDescChange"/>
     </view>
 </view>
-
 <view class="bar">  
-    <text>性别</text>
-    <picker value="{{gender}}" range='["男","女"]' bindchange="bindGenderChange">
-    <input name='gender' class='input-item' value='{{gender}}'/>
+<text>性别</text>
+  <picker value="{{index}}" range="{{genderArr}}"
+    bindchange="bindPickerChange" >
+    <input class="input-item" value="{{genderArr[index]}}"/>
     </picker>
 </view>
-
 <view class="bar">  
-   <text>生日</text>
-    <picker start="1990-01-01" end="2010-01-01" fields="day"  bindchange="bindBirthdateChange"
+<text>生日</text>
+  <picker start="1980-01-01" end="2010-01-01" fields="day"  bindchange="bindBirthdateChange"
+    value="{{birthDate}}"
     bindchange="bindPickerChange"
-    mode = 'date'
-    value='{{birth}}'
+    mode="date"
     >
-    <input name='birth' class='input-item' value='{{birth}}'/>
+    <input class="input-item" value="{{birthDate}}" placeholder="未设置"/>
     </picker>
 </view>
 
-    <view class="space"><text>个人简介:</text></view>
-    <view class="textarea1">
-        <textarea value="{{jianjie}}" name='jianjie'/>
-    </view>
 
-<view class="btn">
-<button  class="my-btn" formType="submit" >
+<button class="my-btn" bindtap="modifyInfo">
 确认修改
 </button>
-</view>
-
-</form>
 </view>

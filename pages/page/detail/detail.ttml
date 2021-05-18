@@ -1,0 +1,37 @@
+<view class="container">
+<view class="header-item">
+<image src="{{avatarUrl}}" mode="widthFix" class='ava'/>
+<view class="nickname">{{nickName}}</view>
+</view>
+
+  <view class="tag-ctn">
+   <block tt:for="{{tags}}">
+   <view class="tag">{{item}}</view>
+   </block>
+  </view>
+
+<view class='name'>
+{{name}}
+</view>
+
+<view class='desc'>
+{{desc}}
+</view>
+
+  <view class='info'>
+  <view>活动地点：{{place}}</view>
+  <view>活动日期：{{date}}</view>
+  </view>
+
+<view class="img_cover">
+<block tt-for="{{descImgSrc}}">
+<view  bindtap="previewPic" data-index="{{index}}">
+<image class="showImg" src="{{item}}" mode="widthFix"/>
+<view/>
+</block>
+</view>
+
+<button class="my-btn">
+{{joined?"已参加":"立即参加"}}
+</button>
+</view>

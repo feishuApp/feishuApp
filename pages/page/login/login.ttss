@@ -1,0 +1,18 @@
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width:60vw;
+    height: 30vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.login_btn{
+    width: 60vw;
+}

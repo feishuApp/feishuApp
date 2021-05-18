@@ -1,13 +1,13 @@
-<view class="form-wrapper">
 
+<view class="form-wrapper">
 <form>
  <view class="input-item">
  <text>名称：</text>
- <input placeholder="取个好听的名字？" style="padding-left:12px" bindinput="_bindNameChange"/>
+ <input placeholder="取个好听的名字？" style="padding-left:12px" bindinput="_bindNameChange" value="{{name}}"/>
  </view>
 <view class="input-item">
  <text>时间：</text>
-<picker mode="time" value="{{time}}" start="{{timeStart}}" end="{{timeEnd}}"
+<picker mode="time" start="{{timeStart}}" end="{{timeEnd}}"
    bindchange="_bindTimeChange"
    >
  <input placeholder="{{time}}" style="padding-left:12px;box-sizing:border-box" value="{{time}}"/>
@@ -15,16 +15,24 @@
 </view>
  <view class="input-item">
  <text>日期：</text>
-  <picker mode="date" start="{{date}}" start="{{ dateStart}}" end="{{dateEnd}}" fields="day" value={{date}}
+  <picker mode="date" start="{{date}}" start="{{ dateStart}}" end="{{dateEnd}}" fields="day"
   bindchange="_bindDateChange"
   >
-    <input placeholder="{{date}}" style="padding-left:12px" value="{{date}}"/>
+    <input placeholder="{{date}}"  style="padding-left:12px" value="{{date}}"/>
  </picker>
  </view>
  <view class="input-item">
  <text>地点：</text>
  <input placeholder="活动地点呢？" style="padding-left:12px" bindinput="_bindposChange"/>
  </view>
+  <view class="tag-ctn">
+   <block tt:for="{{tags}}">
+   <view class="tag" bindtap="chooseTag" data-index="{{index}}" style="{{item.active?'background-color:red':'background-color:none'}}">
+  {{item.name}}
+   </view>
+   </block>
+   </view>
+
  <view style="padding:4px">
  <textarea placeholder="活动的详细描述.。。。" bindinput="_bindDescChange"
 style="height:1.5em"
@@ -34,4 +42,5 @@ style="height:1.5em"
 <button type="default" style="border:none" bindtap="_bindSetup">提交</button>
 </view>
 </form>
+
 </view>

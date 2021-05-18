@@ -13,3 +13,22 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.tag-ctn{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    }
+.tag{
+      font-size: 12px;
+      width: fit-content;
+      height: fit-content;
+      padding: 4px;
+      border: 1px solid red;
+      color: black;
+      border-radius: 5px;
+      box-sizing: content-box;
+      overflow: hidden;
+      margin: 4px;
+ }

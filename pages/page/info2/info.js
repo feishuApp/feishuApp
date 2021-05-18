@@ -1,85 +1,86 @@
+import {modifyUserData} from '../../../networks/index'
+import {getUserInfo} from '../../../networks/index' 
 Page({
     data:{
-        jianjie:"我的简介是什么啊简介是什么啊",
-        qianming:"我的签名mingming",
-        birth:"2001-3-14",
-        gender:'女',
-        nickName:"名字zizi",
-        avatarUrl:"https://p6-lark-file.byteimg.com/img/lark.avatar/a43e7609-ea41-436d-bf5e-1efdf18759bg~72x72.png"
+        birthDate:"",
+        dateStart:"1980-01-01",
+        dateEnd:"2010-01-01",
+        genderArr:["男","女"],
+        descAndInfo:"",
+        index:0,
+        nickName:tt.getStorageSync('userinfo').Name,
+        avatarUrl:tt.getStorageSync('userinfo').avatarUrl,
     },
-    // onLoad:function(){
-    //     tt.request({
-    //         url: 'xxxxx/getUsrInfo',
-    //         method: 'GET',
-    //         success:function(res) {
-    //             console.log(typeof (res.data), res.data);
-    //             this.setData({
-    //                 jianjie: usr.jianjie,
-    //                 qianming: usr.qianming,
-    //                 birth: usr.birth,
-    //                 gender: usr.gender,
-    //                 nickName: usr.nickName,
-    //                 avatarUrl: usr.avatarUrl
-    //             })
-    //              //需要将初始data的值设为空 数据由此处通过请求后台得到
-    //             //需要将初始data的值设为空 数据由此处通过请求后台得到
-    //             //需要将初始data的值设为空 数据由此处通过请求后台得到
-    //         }
-    //     })
-    // },
+
     chooseAvatar:function(e){
         const that = this
         tt.chooseImage({
-            sourceType: ['album'], 
+            sourceType: ['album'], // PC端无效
             count: 1,
             sizeType:['compressed'],
             success (res) {
                     that.setData({
-                    avatarUrl:res.tempFilePaths
+                    avatarUrl:res.tempFilePaths[0]
                 })
+            },
+            fail (res) {
+                console.log(`chooseImage 调用失败`);
             }
         });
-        //完成修改后图片的上传和保存 uploadFile
-        //完成修改后图片的上传和保存 uploadFile
-        //完成修改后图片的上传和保存 uploadFile
-
-
     },
-
-    bindGenderChange: function (e) {
-        let a=['男','女']
+    modifyInfo:function(){
+        modifyUserData({
+            open_id:tt.getStorageSync('open_id'),
+            name:this.data.nickName,
+            gender:this.data.index+1,
+            avatarUrl:this.data.avatarUrl,
+            description:this.data.descAndInfo,
+        })
+        .then(res=>{
+            tt.showToast({
+              title: '修改成功', // 内容
+            });
+            let open_id = tt.getStorageSync('open_id');
+            getUserInfo({open_id,})
+            .then(res=>{
+             if(res.code==1){
+              console.log(res)
+              tt.setStorageSync('userinfo', res.data);
+             }
+             else{
+               tt.showToast({
+                 title: '获取个人信息失败', // 内容
+               });
+             }
+            })
+        })
+        .catch(err=>{
+            tt.showToast({
+                title: '修改失败', // 内容
+                icon:"none",    
+              });
+        })
+    },
+    bindPickerChange: function (e) {
         this.setData({
-            gender: a[e.detail.value]
+            index: e.detail.value
+        })
+    },
+    bindDescChange:function(e){
+       
+        this.setData({
+            descAndInfo:e.detail.value
+        })
+    },
+    bindnickNameChange:function(e){
+       
+        this.setData({
+            nickName:e.detail.value
         })
     },
     bindBirthdateChange:function(e){
         this.setData({
-            birth:e.detail.value
+            birthDate:e.detail.value
         })
-    },
-    formSubmit: function (e) {
-           tt.request({
-            url: 'xxxxxx/changeUsrinfo',
-            data: {
-              'jianjie': e.detail.value.input,
-              'qianming': e.detail.value.qianming,
-              'birth': e.detail.value.birth,
-              'gender': e.detail.value.gender,
-              'nickName': e.detail.value.nickname
-            },
-            method: 'post',
-            header: {
-              'content-type': 'application/json'
-            }
-        })
-        //需要完成后台url和后台修改数据
-        //需要完成后台url和后台修改数据
-        //需要完成后台url和后台修改数据
-
-        tt.showToast({
-            title: '修改成功'
-          })
-
-}
-
+    }
 })

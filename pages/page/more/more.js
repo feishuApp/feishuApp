@@ -5,7 +5,9 @@ Page({
     data: {
       listArry:[],
       color: '',
-      reactBottomloading:false
+      skip:0,
+      reactBottomloading:false,
+      flag:true,
     },
     onLoad: function () {
       const that = this
@@ -14,7 +16,7 @@ Page({
       .then(res=>{
         console.log(res)
         that.setData({
-          listArry:res,
+          listArry:res.data,
         })
       })
       .catch((err)=>{
@@ -27,10 +29,10 @@ Page({
       })
     },
     // 跳转到detail页
-    bindtap:function(e){
-        console.log(e.target)
+    navigatorToDetail:function(e){
+      
       tt.navigateTo({
-        url: `/pages/page/detail3/detail?activid=${e.target.dataset.activid}` // 指定页面的url;
+        url: `/pages/page/detail/detail?activid=${e.target.dataset.activid}` // 指定页面的url;
       });
     },
     _input:function(){
@@ -42,11 +44,37 @@ Page({
     onReachBottom: function() {
       // 页面触底时执行
       console.log("reach bottom")
-      this.setData({
+      
+      if(this.data.flag){
+        this.setData({
+          skip:this.data.skip+1,
+          flag:false,
+          reactBottomloading:true,
+        })
         
-      })
-      this.setData({
-        listArry:[...this.data.listArry,...this.data.listArry]
-      })
+        getActivityData({limit:10,offset:this.data.skip})
+        .then(res=>{
+          console.log(res)
+          if(res.data.length==0){
+            tt.showToast({
+              title: '小主，暂无更多活动', // 内容
+              icon:"none",
+            });
+          }
+         this.setData({
+            listArry:Object.assign({},this.data.listArry,res.data),
+            flag:true,
+            reactBottomloading:false,
+          })
+        })
+        .catch((err)=>{
+          console.log("err")
+          tt.showToast({
+            title: err,
+            duration: 1000,
+            icon:"none",
+        });
+        })
+      }
     },
 })

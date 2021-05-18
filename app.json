@@ -1,13 +1,15 @@
 {
   "pages":[
-    "pages/page/index/index",
-    "pages/page/activeList2/activeList",
-    "pages/page/detail3/detail",
-    "pages/page/feedback2/feedback",
-    "pages/page/info2/info",
     "pages/page/more/more",
+    "pages/page/detail/detail",
+    "pages/page/index/index",
     "pages/page/user/user",
-    "pages/page/sponsor2/sponsor"
+    "pages/page/login/login",
+    "pages/page/partin/partin",
+    "pages/page/sponsor/sponsor",
+    "pages/page/info2/info",
+    "pages/page/feedback2/feedback",
+    "pages/page/activeList2/activeList"
   ],
   "window":{
     "backgroundTextStyle":"light",

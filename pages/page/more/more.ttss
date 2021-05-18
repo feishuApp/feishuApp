@@ -28,3 +28,9 @@ page{
 
     position: relative;
 }
+.loadingText{
+  display: flex;
+  align-items: center;
+  height: 1em;
+  justify-content: space-evenly;
+}
