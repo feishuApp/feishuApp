@@ -14,8 +14,8 @@
   color:rgb(12, 110, 209);
 }
   .avatar{
-    width:35px;
-    height: 35px;
+    width:30px;
+    height: 30px;
     border-radius: 50%;
     overflow: hidden;
     margin-right:10px;
@@ -25,13 +25,13 @@
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
     margin:5px;
   }
 .bottom{
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 16px;
     display: flex;
     flex-direction: row;
     margin:5px;
