@@ -1,8 +1,0 @@
-.textarea{
-    border:2px solid #FFA500;
-    
-    margin:8px 4px;
-    border-radius: 4px;
-    padding: 4px;
-    height: fit-content;
-}

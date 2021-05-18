@@ -51,10 +51,16 @@ Page({
           flag:false,
           reactBottomloading:true,
         })
+        
         getActivityData({limit:10,offset:this.data.skip})
         .then(res=>{
           console.log(res)
-          
+          if(res.data.length==0){
+            tt.showToast({
+              title: '小主，暂无更多活动', // 内容
+              icon:"none",
+            });
+          }
          this.setData({
             listArry:Object.assign({},this.data.listArry,res.data),
             flag:true,

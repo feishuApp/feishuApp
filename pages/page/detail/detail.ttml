@@ -28,7 +28,7 @@
 </view>
 <view class="btn">
 <button class="my-btn">
-{{outOfTime?"已过期":"立即参加"}}
+{{joined?"已参加":"立即参加"}}
 </button>
 
 </view>

@@ -12,14 +12,16 @@
 <view class='container'>
 <view class='line'></view>
 <navigator url="/pages/page/partin/partin">
-<view class='bar'><text class='iconfont icon-kaishi'></text>参与的活动<text class='iconfont icon-xiangyou'></text></view>
+<view class='bar'><text class='iconfont icon-kaishi'></text>发布的活动<text class='iconfont icon-xiangyou'></text></view>
 </navigator>
-<view class='bar'><text class='iconfont icon-huodong1'></text>发布的活动<text class='iconfont icon-xiangyou'></text></view>
+<navigator url="/pages/page/activeList2/activeList">
+<view class='bar'><text class='iconfont icon-huodong1'></text>参与的活动<text class='iconfont icon-xiangyou'></text></view>
+</navigator>
 <view class='line'></view>
 <navigator url="/pages/page/info/info">
 <view class='bar'><text class='iconfont icon-yonghu'></text>个人信息<text class='iconfont icon-xiangyou'></text></view>
 </navigator>
-<navigator url="/pages/page/feedback/feedback">
+<navigator url="/pages/page/feedback2/feedback">
 <view class='bar'><text class='iconfont icon-xinxi-copy'></text>反馈<text class='iconfont icon-xiangyou'></text></view>
 </navigator>
 

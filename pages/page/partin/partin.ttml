@@ -1,8 +1,22 @@
+<!-- todo：优化样式，数据已经调通 -->
+<!-- description: "单位"
+endAt: ""
+id: 17
+joined: 0
+name: "上去"
+startAt: "21:19;2021-04-06"
+tags: ["二次元", "游戏"]
+user_Description: "hello,world"
+user_avatarUrl: "http://127.0.0.1:3000/__dev__/727ee6be2840e8d896386e4aca986de2/static/tmpImages/chart (13).png"
+user_gender: 1
+user_id: 1
+user_nickName: "刘明" -->
+<!-- 上述为list列表 -->
 <view tt:if="{{listData&&listData.length>0}}">
 <view tt:for="{{listData}}" key="{{item.id}}" tt:for-index="idx">
-<partin-activity-item  activity-name="{{item.activityName}}" going-on="{{item.goingOn}}"/>
+<partin-activity-item  activity-name="{{item.name}}" going-on="{{item.goingOn}}"/>
 </view>
 </view>
 <view tt:else>
-您还没有参加过任何活动
+您还没有发起过任何活动
 </view>

@@ -24,6 +24,15 @@ const modifyUserData = async(data)=>{
 const getUserInfo = async(data)=>{
   return requests({url:"/GetUserInfoByOpenid",method:"POST",data})
 }
+const getUserCreatedActivity = async(data)=>{
+  return requests({url:"/GetUserCreatedActivity",method:"POST",data})
+}  
+const GetUserJoinedActivity = async(data)=>{
+  return requests({url:"/GetUserJoinedActivity",method:"POST",data})
+}
+const FindActivityById = async(data)=>{
+  return requests({url:"/FindActivityById",method:"GET",data})
+}
 export {
     getActivityData,
     getBannerData,
@@ -31,5 +40,8 @@ export {
     CreateActivity,
     FindActivityByCode,
     modifyUserData,
-    getUserInfo
+    getUserInfo,
+    getUserCreatedActivity,
+    GetUserJoinedActivity,
+    FindActivityById
 }

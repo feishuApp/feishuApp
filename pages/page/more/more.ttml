@@ -4,9 +4,10 @@
 
 <view tt:for="{{listArry}}">
    
-<view data-index="{{index}}" key="{{item.activID}}" bindtap="navigatorToDetail" >
+<view data-index="{{index}}" key="{{item.id}}" bindtap="navigatorToDetail" >
 
 <activity-list-item avatarUrl="{{item.user_avatarUrl}}"
+                    data-activid="{{item.id}}"
                     activDes="{{item.Description}}"
                     activIni="{{item.user_nickName}}"
                     activName="{{item.Name}}"  

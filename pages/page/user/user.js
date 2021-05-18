@@ -9,7 +9,7 @@ Page({
     },
 
     onShow: function(){
-
+        console.log(this.data.userinfo.avatarUrl)
         let thats = this
         if(!tt.getStorageSync('userinfo')){
           let open_id = tt.getStorageSync('open_id');
@@ -31,6 +31,7 @@ Page({
           })
         }
          else{
+          
           tt.getStorage({
             key: 'userinfo', // 缓存数据的key
             success: (res) => {

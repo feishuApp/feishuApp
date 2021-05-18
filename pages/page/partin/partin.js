@@ -1,30 +1,17 @@
-Page({
+import {GetUserJoinedActivity,getUserCreatedActivity} from '../../../networks/index'
+ Page({
   data:{
     //参与过的活动
      listData:[
-      {
-        activityName:"原神异世相遇",
-        goingOn:false,
-      },{
-        activityName:"王者趣味赛",
-        goingOn:true,
-      },
-      {
-        activityName:"王者趣味赛",
-        goingOn:true,
-      },
-      {
-        activityName:"王者趣味赛",
-        goingOn:false,
-      },
-      {
-        activityName:"王者趣味赛",
-        goingOn:true,
-      },
+     
       
      ]
   },
-  onLOad:function(){
-
+  onLoad:function(){
+    getUserCreatedActivity({open_id:tt.getStorageSync('open_id')})
+    .then(res=>{
+      this.setData({listData:
+        res.data})
+    })
   }
 })
